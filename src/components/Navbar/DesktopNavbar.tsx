@@ -24,7 +24,7 @@ const barStructure: BarStructureProps = {
             href: "/contact",
         }
     ],
-    isLinkBordered: true,
+    isLinkBordered: false,
 }
 const DesktopNavbar = () => {
   return <BarStructure {...barStructure}  />;

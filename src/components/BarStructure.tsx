@@ -4,15 +4,16 @@ import StyledLinkGroup from "../styles/components/LinkGroup.styled";
 import StyledLogo from "../styles/components/Logo.styled";
 import { BarStructureProps } from "./props";
 import StyledBarLink from "../styles/components/BarLink.styled";
-import StyledContactMe from "../styles/components/ContactMe.styled";
+import ContactMe from "./ContactMe";
 
 const BarStructure: React.FC<BarStructureProps> = ({
   links,
   isLinkBordered,
+  styledLogo,
 }) => {
   return (
     <StyledBarStructure>
-      <StyledLogo to={"/"}>
+      <StyledLogo to={"/"} {...styledLogo}>
         <div className="top">DC</div>
         <div className="bottom">plumbing</div>
       </StyledLogo>
@@ -33,13 +34,7 @@ const BarStructure: React.FC<BarStructureProps> = ({
           );
         })}
       </StyledLinkGroup>
-      <StyledContactMe href={`tel:${"+36206211283"}`}>
-        <div className="icon">XX</div>
-        <div className="text">
-          <div className="top">Contact Me!</div>
-          <div className="bottom">+36 20 621 1283</div>
-        </div>
-      </StyledContactMe>
+      <ContactMe />
     </StyledBarStructure>
   );
 };

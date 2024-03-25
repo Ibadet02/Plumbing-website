@@ -4,8 +4,8 @@ import { Theme } from "../theme";
 
 const StyledDescription = styled.p<StyledDescriptionProps & {theme: Theme}>`
   font-size: 1.1rem;
-  /* font-weight: 500; */
   color: ${({ theme, $isdark })=> $isdark ? theme.colors.secondary : theme.colors.white};
+  transition: 0.3s ease;
 `;
 
 export default StyledDescription;

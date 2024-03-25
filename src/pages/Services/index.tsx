@@ -7,7 +7,7 @@ import theme from "../../styles/theme";
 const Services = () => {
   return (
     <StyledPage>
-      <StyledSection $bgcolor={theme.colors.light} $padding_block="2rem">
+      <StyledSection $bgcolor={theme.colors.light} $padding_block="4rem">
         <OfferedServices {...offeredServices} />
       </StyledSection>
     </StyledPage>

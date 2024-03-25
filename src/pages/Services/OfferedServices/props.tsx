@@ -1,9 +1,8 @@
 import { StyledContentHeadingProps, StyledDescriptionProps } from "../../../styles/components/props";
 
-
 export interface ServiceTypeProps {
     id: number;
-    icon: string;
+    icon: JSX.Element;
     contentHeading: {
         text: string;
         styledContentHeading: StyledContentHeadingProps;

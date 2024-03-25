@@ -46,7 +46,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
             }
             onClick={() => setImageIndex(index)}
           >
-            {index}
+            <div className="active-dot"></div>
           </button>
         ))}
       </div>

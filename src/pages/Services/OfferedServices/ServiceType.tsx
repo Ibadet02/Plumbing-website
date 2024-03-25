@@ -11,12 +11,16 @@ const ServiceType: React.FC<ServiceTypeProps> = ({
 }) => {
   return (
     <StyledServiceType>
-      <div className="service-type--icon">{icon}</div>
+      <div className="service-type--icon-box">
+        <div className="icon-wrapper">{icon}</div>
+      </div>
       <div className="service-type--content">
         <StyledContentHeading {...contentHeading.styledContentHeading}>
           {contentHeading.text}
         </StyledContentHeading>
-        <StyledDescription {...description.styledDescription}>{description.text}</StyledDescription>
+        <StyledDescription {...description.styledDescription}>
+          {description.text}
+        </StyledDescription>
       </div>
     </StyledServiceType>
   );

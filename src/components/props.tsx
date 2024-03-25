@@ -3,6 +3,7 @@ import {
   StyledDescriptionProps,
   StyledHeadingProps,
   StyledInfoBoxProps,
+  StyledLogoProps,
 } from "../styles/components/props";
 import { FlowingContentType } from "../styles/components/types";
 import { ButtonProps } from "./Buttons/props";
@@ -40,4 +41,5 @@ export interface BarStructureProps {
     href: string;
   }[];
   isLinkBordered?: boolean;
+  styledLogo?: StyledLogoProps;
 }
